@@ -139,11 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="01_hello_thread.h" />
+    <ClInclude Include="02_lambda_thread.h" />
     <ClInclude Include="05_call_once.h" />
     <ClInclude Include="06_native_multithread.h" />
     <ClInclude Include="07_mutex_lock.h" />
     <ClInclude Include="09_deadlock_bank_transfer.h" />
     <ClInclude Include="10_improved_bank_transfer.h" />
+    <ClInclude Include="11_bank_transfer_wait_notify.h" />
     <ClInclude Include="lock_guard_example.h" />
     <ClInclude Include="ThreadPool.h" />
     <ClInclude Include="03_thread_argument.h" />

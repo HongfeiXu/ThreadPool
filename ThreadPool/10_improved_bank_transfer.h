@@ -107,11 +107,10 @@ void randomTransfer(Bank* bank, Account* accountA, Account* accountB)
 		}
 		else
 		{
-			sCoutLock.lock();
+			const std::lock_guard<std::mutex> lock(sCoutLock);	// RAII，与上面的lock unlock效果一致
 			cout << "Transfer failed, "
 				<< accountA->getName() << " has only $" << accountA->getMoney() << ", but "
 				<< randomMoney << " required" << endl;
-			sCoutLock.unlock();
 		}
 	}
 }
