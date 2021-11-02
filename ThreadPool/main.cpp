@@ -6,13 +6,14 @@
 //#include "06_native_multithread.h"
 //#include "07_mutex_lock.h"
 //#include "09_deadlock_bank_transfer.h"
-#include "10_improved_bank_transfer.h"
+//#include "10_improved_bank_transfer.h"
 //#include "lock_guard_example.h"
 //#include "11_bank_transfer_wait_notify.h"
+#include "12_async_task.h"
 
 int main()
 {
-	test();
+	test3();
 
 	return 0;
 }
