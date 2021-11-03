@@ -1,72 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e1c40364-0633-499a-b7d0-a3180c15b9f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\basic">
+      <UniqueIdentifier>{84716772-5089-4303-817d-13388411a582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mtrebi_thread_pool">
+      <UniqueIdentifier>{dbb6eb93-f7b2-4d4f-8e20-172c145786b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\progschj_thread_pool">
+      <UniqueIdentifier>{5645418f-f637-402b-84e3-4b5c21d58931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{2f4f8954-c675-44a7-9316-73ba91a2792a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ThreadPool.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="05_call_once.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="03_thread_argument.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="04_thread_self_manage.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="06_native_multithread.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="07_mutex_lock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="09_deadlock_bank_transfer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="10_improved_bank_transfer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lock_guard_example.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="11_bank_transfer_wait_notify.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="01_hello_thread.h">
-      <Filter>Header Files</Filter>
+      <Filter>src\basic</Filter>
     </ClInclude>
     <ClInclude Include="02_lambda_thread.h">
-      <Filter>Header Files</Filter>
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="03_thread_argument.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="04_thread_self_manage.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="05_call_once.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="06_native_multithread.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="07_mutex_lock.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="09_deadlock_bank_transfer.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="10_improved_bank_transfer.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="11_bank_transfer_wait_notify.h">
+      <Filter>src\basic</Filter>
     </ClInclude>
     <ClInclude Include="12_async_task.h">
-      <Filter>Header Files</Filter>
+      <Filter>src\basic</Filter>
     </ClInclude>
     <ClInclude Include="13_packaged_task.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="async_example.h">
-      <Filter>Header Files</Filter>
+      <Filter>src\basic</Filter>
     </ClInclude>
     <ClInclude Include="14_promise_future.h">
-      <Filter>Header Files</Filter>
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="async_example.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="lock_guard_example.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPoolImp1.h">
+      <Filter>src\progschj_thread_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeQueue.h">
+      <Filter>src\mtrebi_thread_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>src\utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.h">
+      <Filter>src\mtrebi_thread_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="example.cpp">
+      <Filter>src\mtrebi_thread_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>src\utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

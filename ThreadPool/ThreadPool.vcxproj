@@ -152,12 +152,22 @@
     <ClInclude Include="14_promise_future.h" />
     <ClInclude Include="async_example.h" />
     <ClInclude Include="lock_guard_example.h" />
-    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="SafeQueue.h" />
+    <ClInclude Include="ThreadPoolImp1.h" />
     <ClInclude Include="03_thread_argument.h" />
     <ClInclude Include="04_thread_self_manage.h" />
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="example.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ThreadPool.h" />
+    <ClCompile Include="util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
