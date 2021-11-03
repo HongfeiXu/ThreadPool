@@ -54,6 +54,15 @@
     <ClInclude Include="12_async_task.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="13_packaged_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="async_example.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="14_promise_future.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

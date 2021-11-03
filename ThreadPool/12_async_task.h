@@ -107,6 +107,11 @@ void test3()
 	auto f3 = async(launch::async, &Worker::worker, &w);
 	f3.wait();
 	cout << "Task in class finish, result: " << w.getResult() << endl << endl;
+
+	// thread 也可以这样传参
+	//thread t = thread(&Worker::worker, &w);
+	//t.join();
+	//cout << "Task in class finish, result: " << w.getResult() << endl << endl;
 }
 
 
